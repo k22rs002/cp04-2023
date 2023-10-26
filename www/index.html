@@ -40,7 +40,7 @@
         });
 
         $('#btnD').click(function(e) {
-            btnCClick(e);
+            btnDClick(e);
         });
         init();
     });
@@ -200,8 +200,11 @@
         $("#time").html("経過時間: 0");
         $("#remain").html("残り時間: " + period);
     }
-    
  
+    function btnDClick(e){
+        startTime = new Date();
+    }
+
     // 繰り返し実行する処理
     function timer(){  
       if(active){
@@ -215,7 +218,7 @@
         active = false;
         alarm();
       }
-    } 
+    }  
 
   </script>
 </head>
